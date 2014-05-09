@@ -1,0 +1,3 @@
+[submodule "ytmigrator"]
+	path = ytmigrator
+	url = https://github.com/hendrikvanantwerpen/ytmigrator.git
