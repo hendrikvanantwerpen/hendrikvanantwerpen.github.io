@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hendrik van Antwerpen</title>
+    <description>Person.
+</description>
+    <link>http://hendrik.van-antwerpen.net/</link>
+    <atom:link href="http://hendrik.van-antwerpen.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 05 Nov 2015 14:08:57 +0100</pubDate>
+    <lastBuildDate>Thu, 05 Nov 2015 14:08:57 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.0.pre.beta8</generator>
+    
+      <item>
+        <title>Hello, World!</title>
+        <description>&lt;p&gt;A new blog, like an empty canvas, is full of possibilities. It is not
+an accident that the creation of this blog coincides with the start of
+my time as a PhD student at the
+&lt;a href=&quot;http://www.se.ewi.tudelft.nl/&quot;&gt;Software Engineering Research Group&lt;/a&gt;
+of the Delft University of Technology. For the next four years I’ll be
+studying declarative techniques for static analysis of domain specific
+languges under supervision of
+&lt;a href=&quot;http://eelcovisser.org/&quot;&gt;Eelco Visser&lt;/a&gt;. I’m very excited to see what
+I can achieve in that time. Of course I hope to grow in academic
+skill, but I’m also looking forward to meeting and collaborating with
+smart people from all over the world. Most of what I plan to write
+here will be about to my own research, or about interesting work of
+others. Somewhere in the next month I want to kick off with a post
+about my master thesis work, which is also the basis for my PhD
+research. Until then!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Sep 2015 00:00:00 +0200</pubDate>
+        <link>http://hendrik.van-antwerpen.net/2015/09/03/hello-world/</link>
+        <guid isPermaLink="true">http://hendrik.van-antwerpen.net/2015/09/03/hello-world/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
