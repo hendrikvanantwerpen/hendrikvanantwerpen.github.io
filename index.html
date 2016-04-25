@@ -22,6 +22,20 @@
 
   <body>
 
+    <!-- mathjax config similar to math.stackexchange -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$', '$'] ],
+          displayMath: [ ['$$', '$$']],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"
+            type="text/javascript"></script>
+
     <header class="site-header">
 
   <div class="wrapper">
@@ -60,6 +74,11 @@
         
           
           
+          <a class="page-link" href="/talks/">Talks</a>
+          
+        
+          
+          
           <a class="page-link" href="/publications/">Publications</a>
           
         
@@ -85,7 +104,7 @@
   <ul class="post-list">
     
       <li>
-        <span class="post-meta">3 September 2015</span>
+        <span class="post-meta">03 September 2015</span>
         <h2>
           <a class="post-link" href="/2015/09/03/hello-world/">Hello, World!</a>
         </h2>

@@ -22,6 +22,20 @@
 
   <body>
 
+    <!-- mathjax config similar to math.stackexchange -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$', '$'] ],
+          displayMath: [ ['$$', '$$']],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"
+            type="text/javascript"></script>
+
     <header class="site-header">
 
   <div class="wrapper">
@@ -60,6 +74,11 @@
         
           
           
+          <a class="page-link" href="/talks/">Talks</a>
+          
+        
+          
+          
           <a class="page-link" href="/publications/">Publications</a>
           
         
@@ -87,9 +106,9 @@
 
   <p>
     Links to
-    <a href="/publications/TUD-SERG-2015-012.pdf">PDF</a>
+    <a title="PDF" href="/publications/TUD-SERG-2015-012.pdf">PDF</a>
     
-    <a href="http://researchr.org/publication/TUD-SERG-2015-012">researchr</a>
+    <a title="Publication Details on Researchr" href="http://researchr.org/publication/TUD-SERG-2015-012">researchr</a>
   </p>
 
   
