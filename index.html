@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About Me</title>
+  <title>Hendrik van Antwerpen</title>
   <meta name="description" content="Everything is either impossible or trivial.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://hendrik.van-antwerpen.net/">
-  <link rel="alternate" type="application/rss+xml" title="Hendrik van Antwerpen" href="http://hendrik.van-antwerpen.net/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="alternate" type="application/rss+xml" title="Hendrik van Antwerpen" href="http://localhost:4000/feed.xml" />
   
   <link rel="icon" href="/images/miro-sonnens-square.jpg" />
   
@@ -83,8 +83,6 @@
         
           
           
-          <a class="page-link" href="/">About Me</a>
-          
         
           
           
@@ -109,33 +107,87 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">About Me</h1>
+    <h1 class="post-title"></h1>
   </header>
 
   <article class="post-content">
-    <div class="page">
-
-  <div>
-    <img src="images/me.jpg" style="float: right; width: 20%;" />
-    <p>
-      I am a PhD student at
-      the <a href="http://pl.ewi.tudelft.nl/">Programming
-      Languages</a> group at Delft University of Technology. My
-      research focuses on specification of static semantics. In
-      particular, developing constraint approaches to type checking
-      that support rich name binding patterns. My work is implemented
-      as part of the <a href="http://metaborg.org/">Spoofax Language
-      Workbench</a>. I am being supervised
-      by <a href="http://eelcovisser.org/">Prof. Dr. Eelco Visser</a>.
-    </p>
-    <p>
-      If you want to know more about my research, have a look at my
-      <a href="talks/">talks</a>
-      and <a href="publications/">publications</a>, or contact me.
-    </p>
-  </div>
-
+    <div>
+  <img src="images/me.jpg" style="float: right; width: 20%;" />
+  <p>
+    I am a PhD student at
+    the <a href="http://pl.ewi.tudelft.nl/">Programming
+    Languages</a> group at Delft University of Technology. My
+    research focuses on specification of static semantics. In
+    particular, developing constraint approaches to type checking
+    that support rich name binding patterns. My work is implemented
+    as part of the <a href="http://metaborg.org/">Spoofax Language
+    Workbench</a>. I am being supervised
+    by <a href="http://eelcovisser.org/">Prof. Dr. Eelco Visser</a>.
+  </p>
+  <p>
+    If you want to know more about my research, have a look at my
+    <a href="talks/">talks</a>
+    and <a href="publications/">publications</a>, or contact me.
+  </p>
 </div>
+
+<h2 id="publications">Publications</h2>
+
+<ul class="bibliography"><li><span id="AntwerpenBPRV18">Antwerpen, Hendrik van, Casper Bach Poulsen, Arjen Rouvoet, and Eelco Visser. 2018. “Scopes as Types.” <i>PACMPL</i> 2 (OOPSLA). https://doi.org/https://doi.org/10.1145/3276484.</span>
+<a title="PDF" href="/publications/AntwerpenBPRV18.pdf">pdf</a>
+<a title="Publication at the publisher" href="https://doi.org/10.1145/3276484">doi</a>
+
+<a class="details" href="/publications/AntwerpenBPRV18/">details</a></li>
+<li><span id="VanAntwerpen2016">Antwerpen, Hendrik van. 2016. “A Constraint-Based Approach to Name Binding and Type Checking Using Scope Graphs.” Master's thesis, Delft University of Technology.</span>
+<a title="PDF" href="/publications/VanAntwerpen2016.pdf">pdf</a>
+
+<a class="details" href="/publications/VanAntwerpen2016/">details</a></li>
+<li><span id="AntwerpenNTVW16">Antwerpen, Hendrik van, Pierre Néron, Andrew P. Tolmach, Eelco Visser, and Guido Wachsmuth. 2016. “A Constraint Language for Static Semantic Analysis Based on Scope Graphs.” In <i>PEPM</i>, 49–60. https://doi.org/http://doi.acm.org/10.1145/2847538.2847543.</span>
+
+<a title="Publication at the publisher" href="http://doi.acm.org/10.1145/2847538.2847543">doi</a>
+
+<a class="details" href="/publications/AntwerpenNTVW16/">details</a></li></ul>
+
+<h2 id="research">Research</h2>
+
+<p>My current research is on different operational interpretations of
+declarative type system specifications. We developed <em>Statix</em>, a
+meta-language for specification of type systems, with strong support
+for name binding. I am involved in the following projects around
+<em>Statix</em>:</p>
+
+<ul>
+  <li>Defining an operational semantics for <em>Statix</em> so specifications can
+be used as executable type checkers, by interpreting the typing
+rules as constraint simplification
+rules. With <a href="https://ajrouvoet.github.io/">Arjen Rouvoet</a>
+and <a href="http://casperbp.net/">Casper Bach Poulsen</a>.</li>
+  <li>Developing an incremental type checking algorithm for
+<em>Statix</em>. With <a href="http://taico.nl/">Taico Aerts</a>.</li>
+  <li>Combining <em>Statix</em> specifications with constraint programming
+techniques to define IDE editor services such as code
+completion. With <a href="https://pelsmaeker.net/">Daniel Pelsmaeker</a>.</li>
+  <li>Random generation of well-bound and well-typed programs for testing
+for testing (e.g., of interpreters).</li>
+</ul>
+
+<h2 id="teaching">Teaching</h2>
+
+<ul>
+  <li>Teaching for compiler construction in 2017 and 2018. Lectured on
+type systems and typing constraints, developed homework exercises,
+exam questions, and was a teaching assistant for the accompanying
+lab.</li>
+  <li>Supervision of students working on bachelor and master theses
+related to my research.</li>
+</ul>
+
+<h2 id="professional-activities">Professional Activities</h2>
+
+<ul>
+  <li>Student volunteering for POPL 2016, OOPSLA 2017, and OOPSLA 2018.</li>
+</ul>
+
 
   </article>
 
