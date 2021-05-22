@@ -20,10 +20,10 @@
 <loc>http://localhost:4000/talks/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/publications/RouvoetAPKV20-ext/</loc>
+<loc>http://localhost:4000/publications/AntwerpenV21-preprint/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/publications/RouvoetAPKV20/</loc>
+<loc>http://localhost:4000/publications/RouvoetAPKV20-ext/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/publications/PelsmaekerAV19/</loc>
@@ -52,6 +52,10 @@
 <url>
 <loc>http://localhost:4000/publications/AntwerpenBPRV18.pdf</loc>
 <lastmod>2020-11-11T11:41:10+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/publications/AntwerpenV21-preprint.pdf</loc>
+<lastmod>2021-05-22T18:15:57+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/publications/RouvoetAPKV20.pdf</loc>
