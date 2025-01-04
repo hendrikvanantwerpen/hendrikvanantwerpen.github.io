@@ -6,31 +6,18 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Jan 2025 14:32:53 +0100</pubDate>
-    <lastBuildDate>Thu, 02 Jan 2025 14:32:53 +0100</lastBuildDate>
+    <pubDate>Sat, 04 Jan 2025 23:27:44 +0100</pubDate>
+    <lastBuildDate>Sat, 04 Jan 2025 23:27:44 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
-        <title>Hello, World!</title>
-        <description>&lt;p&gt;A new blog, like an empty canvas, is full of possibilities. It is not
-an accident that the creation of this blog coincides with the start of
-my time as a PhD student at the
-&lt;a href=&quot;http://www.se.ewi.tudelft.nl/&quot;&gt;Software Engineering Research Group&lt;/a&gt;
-of the Delft University of Technology. For the next four years I’ll be
-studying declarative techniques for static analysis of domain specific
-languges under supervision of
-&lt;a href=&quot;http://eelcovisser.org/&quot;&gt;Eelco Visser&lt;/a&gt;. I’m very excited to see what
-I can achieve in that time. Of course I hope to grow in academic
-skill, but I’m also looking forward to meeting and collaborating with
-smart people from all over the world. Most of what I plan to write
-here will be about to my own research, or about interesting work of
-others. Somewhere in the next month I want to kick off with a post
-about my master thesis work, which is also the basis for my PhD
-research. Until then!&lt;/p&gt;
+        <title>Fast byte-pair encoding</title>
+        <description>&lt;p&gt;Together with my colleague Alexander Neubeck we wrote a blog post about a fast byte-pair encoding algorithm he developed.
+Read it here: &lt;a href=&quot;https://github.blog/ai-and-ml/llms/so-many-tokens-so-little-time-introducing-a-faster-more-flexible-byte-pair-tokenizer/&quot;&gt;So many tokens, so little time: Introducing a faster, more flexible byte-pair tokenizer&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 03 Sep 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2015/09/03/hello-world/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/09/03/hello-world/</guid>
+        <pubDate>Thu, 12 Dec 2024 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2024/12/12/fast-bpe/</link>
+        <guid isPermaLink="true">http://localhost:4000/2024/12/12/fast-bpe/</guid>
         
         
       </item>
