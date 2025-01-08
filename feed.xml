@@ -4,11 +4,57 @@
     <title>Hendrik van Antwerpen</title>
     <description>Everything is either impossible or trivial.
 </description>
-    <link>http://hendrik.van-antwerpen.net/</link>
-    <atom:link href="http://hendrik.van-antwerpen.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Jan 2025 23:29:32 +0100</pubDate>
-    <lastBuildDate>Sat, 04 Jan 2025 23:29:32 +0100</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 08 Jan 2025 01:05:32 +0100</pubDate>
+    <lastBuildDate>Wed, 08 Jan 2025 01:05:32 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>PhD defense 15 January 2025</title>
+        <description>&lt;p&gt;On Wednesday 15 January 2025 I’ll be defending my dissertation titled “Declarative Name Binding for Type System Specifications”.
+The defense starts at 17:00 CET and can be followed online (&lt;a href=&quot;https://nmclive.tudelft.nl/mediasite/play/e5b66c56929044a792325e3eec3f04a31d&quot;&gt;livestream&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;A Dutch PhD defence is a very formal public ceremony.
+It usually starts with a more informal presentation to give the general audience, family and friends, an idea what the thesis topic is.
+After that the official defence starts.
+For exactly an hour the candidate is examined by the committee members, in decreasing order of geographical distance.
+The end of questioning is marked by the &lt;em&gt;bedel&lt;/em&gt; (a sort of academic MC) announcing &lt;em&gt;hora est&lt;/em&gt; (it is time).
+The committee retreats to decide the outcome of the defence.
+The diploma ceremony, if the degree is awarded, is held immediately, and the candidate walks out of the door diploma in hand.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;The topic of the dissertation is the design of a meta-language, Statix, to support high-level type specifications of programming languages with expressive name binding features, and automatically generate type checkers from those specifications.
+The dissertation is accompanied by a number of &lt;em&gt;propositions&lt;/em&gt; that go beyond the contributions of the thesis, and reflect on the research more generally, as well as comment on societal issues.
+Follow these links to download the &lt;a href=&quot;/publications/Antwerpen24-dissertation.pdf&quot;&gt;dissertation&lt;/a&gt; and &lt;a href=&quot;/publications/Antwerpen24-propositions.pdf&quot;&gt;propositions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This will be the finale to a long process—I formally started my PhD back in 2015.
+I am grateful to Eelco Visser, who was my supervisor and who thaught me a lot until his untimely passing in 2022.
+I am thankful to Arie van Deursen and Jesper Cockx, who supervised me in the past year and supported me to finish the dissertation.
+And I want to thank the committee members, who have taken the time to read my dissertation and participate in the defence: Andrew Tolmach, Robby Findler, Görel Hedin, Wouter Swierstra, and Matthijs Spaan.
+These are just the people directly involved with the defense.
+There have been many more that have made this possible, which can (hopefully) all be found in the acknowledgements in the dissertation.
+I am looking forward to this defense and excited to finally wrap up what turned out to be an almost decade long project!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+
+      &lt;p&gt;This is very different from the tradition in for example the UK and the USA, where examinations are private, open-ended, and examinors can request (sometimes major) revisions.
+In the Dutch system, all committee members assess the dissertation beforehand.
+Major concerns about the work need to be addressed and those changes approved &lt;em&gt;before&lt;/em&gt; the defence is even held.
+That is why dissertations in The Netherlands are already published before the defence. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 08 Jan 2025 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2025/01/08/phd-defense/</link>
+        <guid isPermaLink="true">http://localhost:4000/2025/01/08/phd-defense/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Fast byte-pair encoding</title>
@@ -16,8 +62,8 @@
 Read it here: &lt;a href=&quot;https://github.blog/ai-and-ml/llms/so-many-tokens-so-little-time-introducing-a-faster-more-flexible-byte-pair-tokenizer/&quot;&gt;So many tokens, so little time: Introducing a faster, more flexible byte-pair tokenizer&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 12 Dec 2024 00:00:00 +0100</pubDate>
-        <link>http://hendrik.van-antwerpen.net/2024/12/12/fast-bpe/</link>
-        <guid isPermaLink="true">http://hendrik.van-antwerpen.net/2024/12/12/fast-bpe/</guid>
+        <link>http://localhost:4000/2024/12/12/fast-bpe/</link>
+        <guid isPermaLink="true">http://localhost:4000/2024/12/12/fast-bpe/</guid>
         
         
       </item>
