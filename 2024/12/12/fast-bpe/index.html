@@ -6,17 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Fast byte-pair encoding</title>
-  <meta name="description" content="Together with my colleague Alexander Neubeck we wrote a blog post about a fast byte-pair encoding algorithm he developed.Read it here: So many tokens, so lit...">
-
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/2024/12/12/fast-bpe/">
-  <link rel="alternate" type="application/rss+xml" title="Hendrik van Antwerpen" href="http://localhost:4000/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Hendrik van Antwerpen" href="https://hendrik.van-antwerpen.net/feed.xml" />
   
   <link rel="icon" href="/images/miro-sonnens-square.jpg" />
   
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
 
+  <!-- SEO generates title, description, canonical URL -->
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Fast byte-pair encoding | Hendrik van Antwerpen</title>
 <meta name="generator" content="Jekyll v4.3.3" />
@@ -24,15 +21,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Together with my colleague Alexander Neubeck we wrote a blog post about a fast byte-pair encoding algorithm he developed. Read it here: So many tokens, so little time: Introducing a faster, more flexible byte-pair tokenizer." />
 <meta property="og:description" content="Together with my colleague Alexander Neubeck we wrote a blog post about a fast byte-pair encoding algorithm he developed. Read it here: So many tokens, so little time: Introducing a faster, more flexible byte-pair tokenizer." />
-<link rel="canonical" href="http://localhost:4000/2024/12/12/fast-bpe/" />
-<meta property="og:url" content="http://localhost:4000/2024/12/12/fast-bpe/" />
+<link rel="canonical" href="https://hendrik.van-antwerpen.net/2024/12/12/fast-bpe/" />
+<meta property="og:url" content="https://hendrik.van-antwerpen.net/2024/12/12/fast-bpe/" />
 <meta property="og:site_name" content="Hendrik van Antwerpen" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-12-12T00:00:00+01:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Fast byte-pair encoding" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-12-12T00:00:00+01:00","datePublished":"2024-12-12T00:00:00+01:00","description":"Together with my colleague Alexander Neubeck we wrote a blog post about a fast byte-pair encoding algorithm he developed. Read it here: So many tokens, so little time: Introducing a faster, more flexible byte-pair tokenizer.","headline":"Fast byte-pair encoding","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/12/12/fast-bpe/"},"url":"http://localhost:4000/2024/12/12/fast-bpe/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-12-12T00:00:00+01:00","datePublished":"2024-12-12T00:00:00+01:00","description":"Together with my colleague Alexander Neubeck we wrote a blog post about a fast byte-pair encoding algorithm he developed. Read it here: So many tokens, so little time: Introducing a faster, more flexible byte-pair tokenizer.","headline":"Fast byte-pair encoding","mainEntityOfPage":{"@type":"WebPage","@id":"https://hendrik.van-antwerpen.net/2024/12/12/fast-bpe/"},"url":"https://hendrik.van-antwerpen.net/2024/12/12/fast-bpe/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -40,19 +37,17 @@
 
   <body>
 
-    <!-- mathjax config similar to math.stackexchange -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
+    <script type="text/javscript">
+      MathJax = {
+        tex: {
           inlineMath: [ ['$', '$'] ],
           displayMath: [ ['$$', '$$']],
           processEscapes: true,
           skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
         }
-      });
+      };
     </script>
-    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"
-            type="text/javascript"></script>
+    <script type="text/javascript" id="MathJax-script" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.min.js"></script>
 
     <header class="site-header">
 
@@ -124,11 +119,11 @@ Read it here: <a href="https://github.blog/ai-and-ml/llms/so-many-tokens-so-litt
   Share on
   
   
-  <a href="https://twitter.com/share?text=Fast%20byte-pair%20encoding&url=http://localhost:4000/2024/12/12/fast-bpe/" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-hack-rettiwt"></i></a>
-  <a href="https://facebook.com/sharer.php?u=http://localhost:4000/2024/12/12/fast-bpe/&p[title]=Fast%20byte-pair%20encoding" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-hack-koobecaf"></i></a>
-  <a href="https://plus.google.com/share?url=http://localhost:4000/2024/12/12/fast-bpe/" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-hack-elgoog-plus"></i></a>
-  <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2024/12/12/fast-bpe/&title=Fast%20byte-pair%20encoding&source=http://localhost:4000" rel="nofollow" target="_blank" title="Share on LindedIn"><i class="fa fa-hack-nideknil"></i></a>
-  <a href="http://www.reddit.com/submit?url=http://localhost:4000/2024/12/12/fast-bpe/&title=Fast%20byte-pair%20encoding" rel="nofollow" target="_blank" title="Share on Reddit"><i class="fa fa-hack-tidder"></i></a>
+  <a href="https://twitter.com/share?text=Fast%20byte-pair%20encoding&url=https://hendrik.van-antwerpen.net/2024/12/12/fast-bpe/" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-hack-rettiwt"></i></a>
+  <a href="https://facebook.com/sharer.php?u=https://hendrik.van-antwerpen.net/2024/12/12/fast-bpe/&p[title]=Fast%20byte-pair%20encoding" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-hack-koobecaf"></i></a>
+  <a href="https://plus.google.com/share?url=https://hendrik.van-antwerpen.net/2024/12/12/fast-bpe/" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-hack-elgoog-plus"></i></a>
+  <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://hendrik.van-antwerpen.net/2024/12/12/fast-bpe/&title=Fast%20byte-pair%20encoding&source=https://hendrik.van-antwerpen.net" rel="nofollow" target="_blank" title="Share on LindedIn"><i class="fa fa-hack-nideknil"></i></a>
+  <a href="http://www.reddit.com/submit?url=https://hendrik.van-antwerpen.net/2024/12/12/fast-bpe/&title=Fast%20byte-pair%20encoding" rel="nofollow" target="_blank" title="Share on Reddit"><i class="fa fa-hack-tidder"></i></a>
 </span>
 
   </footer>
